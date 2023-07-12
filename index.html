@@ -19,33 +19,71 @@
   <div class="container">
     <header class="header">
       <img class="logo" src="img/logo.png" alt="logo" />
-      <form class="form__search">
-        <input class="search__input" type="search">
-        <i class="search__icon"></i>
+      <form action="#" class="search">
+        <input class="search__input" type="search" placeholder="Search hotels">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
       </form>
       <nav class="user__nav">
         <div class="user__nav-box">
-          <i class="user__nav-icon">
-            Jonas
-          </i>
+          <svg class="user__nav-icon">
+            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            <span class="user__nav-notification">7</span>
+          </svg>
         </div>
         <div class="user__nav-box">
-
-          <i class="user__nav-icon">
-            Shmatmann
-          </i>
+          <svg class="user__nav-icon">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+            <span class="user__nav-notification">13</span>
+          </svg>
         </div>
-        <div class="user user__nav-box">
-          <div class="user__img-box"></div>
+        <div class="user__nav-box">
+          <div class="user__img-box"> &nbsp;</div>
           <p class="user__name">Jonas</p>
         </div>
       </nav>
     </header>
     <div class="content">
       <nav class="side-bar">
-        SideBar
+        <ul class="navigation">
+          <li class="navigation__items active">
+            <svg class="navigation__icon">
+              <use xlink:href="img/sprite.svg#icon-home"></use>
+            </svg>
+            <p class="navigation__text">Hotel</p>
+          </li>
+
+          <li class="navigation__items">
+            <svg class="navigation__icon">
+              <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+            </svg>
+            <p class="navigation__text">Flight</p>
+          </li>
+
+          <li class="navigation__items">
+            <svg class="navigation__icon">
+              <use xlink:href="img/sprite.svg#icon-key"></use>
+            </svg>
+            <p class="navigation__text">Car rental</p>
+          </li>
+
+          <li class="navigation__items">
+            <svg class="navigation__icon">
+              <use xlink:href="img/sprite.svg#icon-map"></use>
+            </svg>
+            <p class="navigation__text">Tours</p>
+          </li>
+        </ul>
+        <div class="copyright">
+          @ 2017 by trillo. All rights reserved.
+        </div>
       </nav>
-      <main class="main__content">
+
+
+      <main class="hotel__view">
         <div class="gallery">
           <div>
             <img src="img/hotel-1.jpg" class="gallery__img" />
@@ -55,6 +93,142 @@
           </div>
           <div>
             <img src="img/hotel-3.jpg" class="gallery__img" />
+          </div>
+        </div>
+        <div class="overview">
+          <h1 class="heading-primary">
+            Hotel las palmas
+          </h1>
+          <div class="stars">
+            <svg class="stars__icon">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="stars__icon">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="stars__icon">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="stars__icon">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="stars__icon">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+
+          <div class="location">
+            <svg class="location__icon">
+              <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+            </svg>
+            <a href="#" class="link">
+              Albufeira, Portugal
+            </a>
+          </div>
+          <div class="rating">
+            <p class="rating__number">
+              8.6
+            </p>
+            <p class="rating__vote">
+              429 votes
+            </p>
+          </div>
+        </div>
+
+        <div class="details">
+          <div class="feature">
+            <p class="feature__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+            </p>
+
+            <p class="feature__text">
+              Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure aliquid aliquam.
+            </p>
+            <ul class="feature__list">
+              <li class="feature__item">Close to the beach</li>
+              <li class="feature__item">Free airport shuttle</li>
+              <li class="feature__item">Air conditioning and heating</li>
+              <li class="feature__item">We speak all languages</li>
+              <li class="feature__item">Breakfast included</li>
+              <li class="feature__item">Free wifi in all rooms</li>
+              <li class="feature__item">Pets allowed</li>
+              <li class="feature__item">Perfect for families</li>
+            </ul>
+
+            <div class="recommend">
+              <p class="recommend__text">
+                Lucy and 3 other friends recommend this hotel.
+              </p>
+              <div class="recommend__pictures">
+                <figure class="recommend__img-box">
+                  <img class="recommend__img" src="img/user-3.jpg" />
+                </figure>
+                <figure class=" recommend__img-box">
+                  <img class="recommend__img" src="img/user-4.jpg" />
+                </figure>
+                <figure class="recommend__img-box">
+                  <img class="recommend__img" src="img/user-5.jpg" />
+                </figure>
+                <figure class="recommend__img-box">
+                  <img class="recommend__img" src="img/user-6.jpg" />
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <div class="testimonial__box">
+              <p class="testimonial__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia ex.
+              </p>
+              <div class="author">
+                <div class="author__img-box">
+                  <img src="img/user-1.jpg" class="author__img" />
+                </div>
+                <div class="author__box">
+                  <p class="author__name">
+                    Nick Smith
+                  </p>
+                  <p class="author__date">
+                    Feb 23rd, 2017
+                  </p>
+                </div>
+                <p class="author__rating">
+                  7.8
+                </p>
+              </div>
+
+            </div>
+
+            <div class="testimonial__box">
+              <p class="testimonial__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+              </p>
+              <div class="author">
+                <div class="author__img-box">
+                  <img src="img/user-2.jpg" class="author__img" />
+                </div>
+                <div class="author__box">
+                  <p class="author__name">
+                    Mary Thomas
+                  </p>
+                  <p class="author__date">
+                    Sept 13th, 2017
+                  </p>
+                </div>
+                <p class="author__rating">
+                  9.3
+                </p>
+              </div>
+            </div>
+
+            <div class="link-box">
+              <a href="#" class="link">
+                Show all
+                <span>&rarr;</span>
+              </a>
+            </div>
+
           </div>
         </div>
       </main>

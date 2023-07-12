@@ -93,6 +93,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: var(--line);
 }
 
 .content {
@@ -100,12 +101,63 @@
 }
 
 .side-bar {
+  padding: 3.5rem 0;
   flex: 0 0 18%;
-  background-color: grey;
-  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-grey-dark-1);
 }
 
-.main__content {
+.hotel__view {
   flex: 1;
-  background-color: blue;
+  min-height: 50rem;
+}
+
+.overview {
+  height: 6.6rem;
+  border-bottom: var(--line);
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+}
+
+.details {
+  font-size: 1.4rem;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  display: flex;
+  gap: 4.5rem;
+}
+
+.feature {
+  flex: 0 0 60%;
+}
+
+.testimonial {
+  padding-right: 4rem;
+  flex: 0 0 40%;
+}
+.feature,
+.testimonial__box {
+  background-color: #fff;
+  padding: 3rem;
+  box-shadow: var(--shadow-light);
+}
+.testimonial__box {
+  margin-bottom: 3.5rem;
+  position: relative;
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -2.75rem;
+    left: -1rem;
+    line-height: 1;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
+  }
 }
