@@ -111,6 +111,15 @@
   font-weight: 300;
   letter-spacing: 1px;
   margin-left: 3rem;
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 1.8rem;
+  }
+}
+
+.stars {
+  display: flex;
+  align-items: center;
 }
 
 .stars__icon,
@@ -138,6 +147,9 @@
   padding: 0 2.25rem;
   background-color: var(--color-primary);
 
+  @media only screen and (max-width: 37.5em) {
+    padding: 0 1.5rem;
+  }
   &__number {
     font-size: 2.25rem;
     font-weight: 300;
@@ -283,14 +295,33 @@
 }
 
 .navigation {
+  @media screen and (max-width: 56.25em) {
+    display: flex;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    height: 7rem;
+  }
   &__items {
     height: 5rem;
     display: flex;
     align-items: center;
     gap: 2rem;
 
+    @media screen and (max-width: 37.5em) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.6rem;
+      height: 100%;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+    }
+
+    @media screen and (max-width: 56.25em) {
+      flex: 1;
+      justify-content: center;
     }
   }
 
@@ -299,6 +330,10 @@
     fill: #fff;
     width: 1.7rem;
     height: 1.7rem;
+
+    @media screen and (max-width: 37.5em) {
+      margin-left: 0;
+    }
   }
 
   &__text {
@@ -314,6 +349,9 @@
   margin-top: auto;
   padding: 0 2rem;
   color: var(--color-grey-light-4);
+  @media screen and (max-width: 56.25em) {
+    display: none;
+  }
 }
 
 .testimonial__text {

@@ -81,10 +81,10 @@
   background-color: var(--color-grey-light-2);
   min-height: 50rem;
 
-  // @media screen and (max-width: 75em) {
-  //   margin: 0;
-  //   width: 100%;
-  // }
+  @media screen and (max-width: 75em) {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .header {
@@ -98,6 +98,10 @@
 
 .content {
   display: flex;
+
+  @media screen and (max-width: 56.25em) {
+    flex-direction: column;
+  }
 }
 
 .side-bar {
@@ -106,6 +110,10 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-grey-dark-1);
+
+  @media screen and (max-width: 56.25em) {
+    padding: 0;
+  }
 }
 
 .hotel__view {
@@ -121,6 +129,11 @@
   gap: 3.5rem;
   background-color: #fff;
   font-size: 1.2rem;
+
+  @media screen and (max-width: $bp-small) {
+    height: 6rem;
+    gap: 2rem;
+  }
 }
 
 .details {
@@ -129,6 +142,15 @@
   background-color: var(--color-grey-light-1);
   display: flex;
   gap: 4.5rem;
+
+  @media screen and (max-width: 56.25em) {
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    flex-direction: column;
+  }
 }
 
 .feature {
@@ -138,12 +160,20 @@
 .testimonial {
   padding-right: 4rem;
   flex: 0 0 40%;
+
+  @media screen and (max-width: 37.5em) {
+    padding: 0;
+  }
 }
 .feature,
 .testimonial__box {
   background-color: #fff;
   padding: 3rem;
   box-shadow: var(--shadow-light);
+
+  @media screen and (max-width: 56.25em) {
+    padding: 2rem;
+  }
 }
 .testimonial__box {
   margin-bottom: 3.5rem;
