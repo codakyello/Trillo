@@ -21,7 +21,7 @@ $bp-largest: 75em; // 1200px Laptop Screens
 $bp-large: 68.75em; // 1100px LandScape Tablets
 $bp-medium: 56.25em; // 900px Vertical Tablets
 $bp-small: 37.5em; // 600px Mobile Phones
-$bp-smallest: 31.25em; // 500px
+$bp-smallest: 25.625em; // 500px
 
 * {
   margin: 0;
@@ -45,6 +45,10 @@ html {
   @media screen and (max-width: 56.25em) {
     font-size: 50%;
   }
+
+  // @media screen and (max-width: $bp-smallest) {
+  //   font-size: 43.75%;
+  // }
 }
 
 body {
